@@ -1,0 +1,14 @@
+{
+	"Targets": [
+		{
+			"Name": "VR_Game",
+			"Path": "D:\\Users\\tucha\\Documents\\GitHub\\The-Last-Arena-VR-\\VR_Game\\Source\\VR_Game.Target.cs",
+			"Type": "Game"
+		},
+		{
+			"Name": "VR_GameEditor",
+			"Path": "D:\\Users\\tucha\\Documents\\GitHub\\The-Last-Arena-VR-\\VR_Game\\Source\\VR_GameEditor.Target.cs",
+			"Type": "Editor"
+		}
+	]
+}

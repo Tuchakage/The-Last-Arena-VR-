@@ -1,0 +1,8 @@
+{
+	"SourceFiles": [
+		"D:\\Users\\tucha\\Documents\\GitHub\\The-Last-Arena-VR-\\VR_Game\\Source\\VR_Game\\VR_Game.Build.cs",
+		"D:\\Users\\tucha\\Documents\\GitHub\\The-Last-Arena-VR-\\VR_Game\\Source\\VR_Game.Target.cs",
+		"D:\\Users\\tucha\\Documents\\GitHub\\The-Last-Arena-VR-\\VR_Game\\Source\\VR_GameEditor.Target.cs"
+	],
+	"EngineVersion": "4.26.2"
+}
