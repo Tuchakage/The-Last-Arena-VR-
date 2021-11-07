@@ -676,3 +676,5 @@ C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.2
 C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30037\INCLUDE\isa_availability.h
 C:\Program Files\Epic Games\UE_4.26\Engine\Source\Runtime\Slate\Public\Widgets/Input/SSlider.h
 C:\Program Files\Epic Games\UE_4.26\Engine\Source\Runtime\Slate\Public\Framework/Docking/LayoutService.h
+D:\Users\tucha\Documents\GitHub\The-Last-Arena-VR-\VR_Game\Source\VR_Game\Public\HealthComponent.h
+D:\Users\tucha\Documents\GitHub\The-Last-Arena-VR-\VR_Game\Intermediate\Build\Win64\UE4Editor\Inc\VR_Game\HealthComponent.generated.h

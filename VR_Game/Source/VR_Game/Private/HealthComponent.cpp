@@ -2,7 +2,7 @@
 
 
 #include "HealthComponent.h"
-
+#include "Engine.h"
 // Sets default values for this component's properties
 UHealthComponent::UHealthComponent()
 {
@@ -36,6 +36,12 @@ void UHealthComponent::TakeDamage(float Damage)
 	//Makes it so that the max value for Current Health is whatever is in maxHealth and makes sure the minimum value is 0  and it reduces the currentHealth variable
 	currentHealth = FMath::Clamp(currentHealth - Damage, 0.0f, maxHealth);
 }
+
+//Testing Calling this function from other scripts
+//void UHealthComponent::Test()
+//{
+//	GEngine->AddOnScreenDebugMessage(-1, 1, FColor::Red, FString::Printf(TEXT("Test")));
+//}
 
 
 

@@ -26,6 +26,13 @@ protected:
 	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = "Health")
 	float currentHealth;
 	
+
+
+public:
 	UFUNCTION(BlueprintCallable, Category = "Health")
 	void TakeDamage(float Damage);
+
+	//Testing Calling this function from other scripts
+	//UFUNCTION(BlueprintCallable, Category = "Health")
+	//void Test();
 };

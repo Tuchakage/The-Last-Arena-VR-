@@ -30,4 +30,9 @@ public:
 	//TESTING PURPOSES (Overrides On Component Begin Overlap)
 	UFUNCTION()
 	void onOverlapBegin(UPrimitiveComponent* OverlappedComponent, AActor* OtherActor, UPrimitiveComponent* OtherComp, int32 OtherBodyIndex, bool bFromSweep, const FHitResult& SweepResult);
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Player")
+	AActor* player;
+
+
 };

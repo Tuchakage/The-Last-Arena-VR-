@@ -1,17 +1,19 @@
 ﻿  Using 'git status' to determine working set for adaptive non-unity build (D:\Users\tucha\Documents\GitHub\The-Last-Arena-VR-).
   Parsing headers for VR_GameEditor
     Running UnrealHeaderTool "D:\Users\tucha\Documents\GitHub\The-Last-Arena-VR-\VR_Game\VR_Game.uproject" "D:\Users\tucha\Documents\GitHub\The-Last-Arena-VR-\VR_Game\Intermediate\Build\Win64\VR_GameEditor\Development\VR_GameEditor.uhtmanifest" -LogCmds="loginit warning, logexit warning, logdatabase error" -Unattended -WarningsAsErrors -abslog="C:\Users\tucha\AppData\Local\UnrealBuildTool\Log_UHT.txt" -installed
-  Reflection code generated for VR_GameEditor in 3.2809966 seconds
+  Reflection code generated for VR_GameEditor in 12.7855711 seconds
   Building VR_GameEditor...
   Using Visual Studio 2019 14.29.30038 toolchain (C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30037) and Windows 10.0.16299.0 SDK (C:\Program Files (x86)\Windows Kits\10).
-  Building 6 actions with 12 processes...
-    [1/6] VR_Game.init.gen.cpp
-    [2/6] Weapon.gen.cpp
-    [3/6] Weapon.cpp
-    [4/6] UE4Editor-VR_Game-0003.lib
-       Creating library D:\Users\tucha\Documents\GitHub\The-Last-Arena-VR-\VR_Game\Intermediate\Build\Win64\UE4Editor\Development\VR_Game\UE4Editor-VR_Game-0003.lib and object D:\Users\tucha\Documents\GitHub\The-Last-Arena-VR-\VR_Game\Intermediate\Build\Win64\UE4Editor\Development\VR_Game\UE4Editor-VR_Game-0003.exp
-    [5/6] UE4Editor-VR_Game-0003.dll
-       Creating library D:\Users\tucha\Documents\GitHub\The-Last-Arena-VR-\VR_Game\Intermediate\Build\Win64\UE4Editor\Development\VR_Game\UE4Editor-VR_Game-0003.suppressed.lib and object D:\Users\tucha\Documents\GitHub\The-Last-Arena-VR-\VR_Game\Intermediate\Build\Win64\UE4Editor\Development\VR_Game\UE4Editor-VR_Game-0003.suppressed.exp
-    [6/6] VR_GameEditor.target
-  Total time in Parallel executor: 48.79 seconds
-  Total execution time: 52.67 seconds
+  Building 8 actions with 12 processes...
+    [1/8] VR_Game.init.gen.cpp
+    [2/8] HealthComponent.gen.cpp
+    [3/8] Weapon.gen.cpp
+    [4/8] Weapon.cpp
+    [5/8] HealthComponent.cpp
+    [6/8] UE4Editor-VR_Game-0011.lib
+       Creating library D:\Users\tucha\Documents\GitHub\The-Last-Arena-VR-\VR_Game\Intermediate\Build\Win64\UE4Editor\Development\VR_Game\UE4Editor-VR_Game-0011.lib and object D:\Users\tucha\Documents\GitHub\The-Last-Arena-VR-\VR_Game\Intermediate\Build\Win64\UE4Editor\Development\VR_Game\UE4Editor-VR_Game-0011.exp
+    [7/8] UE4Editor-VR_Game-0011.dll
+       Creating library D:\Users\tucha\Documents\GitHub\The-Last-Arena-VR-\VR_Game\Intermediate\Build\Win64\UE4Editor\Development\VR_Game\UE4Editor-VR_Game-0011.suppressed.lib and object D:\Users\tucha\Documents\GitHub\The-Last-Arena-VR-\VR_Game\Intermediate\Build\Win64\UE4Editor\Development\VR_Game\UE4Editor-VR_Game-0011.suppressed.exp
+    [8/8] VR_GameEditor.target
+  Total time in Parallel executor: 50.65 seconds
+  Total execution time: 64.10 seconds
