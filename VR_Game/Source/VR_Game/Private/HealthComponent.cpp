@@ -23,19 +23,10 @@ UHealthComponent::UHealthComponent()
 void UHealthComponent::BeginPlay()
 {
 	Super::BeginPlay();
-
-	//Get Reference to the owning pawn
-	AActor* Owner = GetOwner();
-
-	if (Owner) 
-	{
-		//When the Take any damage function is called we want to bind the function to the one we created "TakeDamage()"
-		Owner->OnTakeAnyDamage.AddDynamic(this, &UHealthComponent::TakeDamage);
-	}
 	
 }
 
-void UHealthComponent::TakeDamage(AActor* DamagedActor, float Damage, const UDamageType* DamageType, AController* InstigatedBy, AActor* DamageCauser)
+void UHealthComponent::TakeDamage(float Damage)
 {
 	if (Damage < 0) 
 	{

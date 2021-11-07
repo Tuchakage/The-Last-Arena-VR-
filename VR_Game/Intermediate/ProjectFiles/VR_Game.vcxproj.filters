@@ -3,7 +3,7 @@
   <ItemGroup>
     <None Include="..\..\VR_Game.uproject" />
     <Filter Include="Source">
-      <UniqueIdentifier>{21F3C278-6418-46D8-8241-3D3D4E41BD3F}</UniqueIdentifier>
+      <UniqueIdentifier>{13F2AA5A-005B-46B3-923D-671AA11A19E5}</UniqueIdentifier>
     </Filter>
     <None Include="..\..\Source\VR_Game.Target.cs">
       <Filter>Source</Filter>
@@ -12,7 +12,7 @@
       <Filter>Source</Filter>
     </None>
     <Filter Include="Config">
-      <UniqueIdentifier>{86AE1ACC-778A-45A7-982B-A94D80B4951A}</UniqueIdentifier>
+      <UniqueIdentifier>{5CC92FDB-D628-482C-82F3-70370CD7FCA2}</UniqueIdentifier>
     </Filter>
     <None Include="..\..\Config\DefaultEditorPerProjectUserSettings.ini">
       <Filter>Config</Filter>
@@ -33,7 +33,7 @@
       <Filter>Config</Filter>
     </None>
     <Filter Include="Config\SteamVRBindings">
-      <UniqueIdentifier>{11843EEF-9EE1-44E1-B114-1BBE7174416F}</UniqueIdentifier>
+      <UniqueIdentifier>{C7E664E0-D635-4121-8D33-952756E057C3}</UniqueIdentifier>
     </Filter>
     <None Include="..\..\Config\SteamVRBindings\gamepad.json">
       <Filter>Config\SteamVRBindings</Filter>
@@ -114,7 +114,7 @@
       <Filter>Config\SteamVRBindings</Filter>
     </None>
     <Filter Include="Source\VR_Game">
-      <UniqueIdentifier>{C8AE115A-3A77-4F3E-B63B-D6BD11324A8B}</UniqueIdentifier>
+      <UniqueIdentifier>{24A138FA-C991-437A-B9E7-9B0565897C2D}</UniqueIdentifier>
     </Filter>
     <None Include="..\..\Source\VR_Game\VR_Game.Build.cs">
       <Filter>Source\VR_Game</Filter>
@@ -126,15 +126,21 @@
       <Filter>Source\VR_Game</Filter>
     </ClInclude>
     <Filter Include="Source\VR_Game\Private">
-      <UniqueIdentifier>{77D2DBFE-B759-4777-BA4A-99761A159009}</UniqueIdentifier>
+      <UniqueIdentifier>{213BAE6E-5C23-49A8-A94D-395727AF3BEE}</UniqueIdentifier>
     </Filter>
     <ClCompile Include="..\..\Source\VR_Game\Private\HealthComponent.cpp">
       <Filter>Source\VR_Game\Private</Filter>
     </ClCompile>
+    <ClCompile Include="..\..\Source\VR_Game\Private\Weapon.cpp">
+      <Filter>Source\VR_Game\Private</Filter>
+    </ClCompile>
     <Filter Include="Source\VR_Game\Public">
-      <UniqueIdentifier>{00A6D321-A736-4DE3-8234-81DCF51AF869}</UniqueIdentifier>
+      <UniqueIdentifier>{3B6928D3-E50A-4C98-A11C-D29074FFD9AC}</UniqueIdentifier>
     </Filter>
     <ClInclude Include="..\..\Source\VR_Game\Public\HealthComponent.h">
+      <Filter>Source\VR_Game\Public</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\VR_Game\Public\Weapon.h">
       <Filter>Source\VR_Game\Public</Filter>
     </ClInclude>
   </ItemGroup>
