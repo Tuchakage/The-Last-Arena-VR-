@@ -42,13 +42,21 @@ void UWeapon::onOverlapBegin(UPrimitiveComponent* OverlappedComponent, AActor* O
 		//Find the Health Component and then call the Take Damage function (Inputs the Damage variable)
 		player->FindComponentByClass<UHealthComponent>()->TakeDamage(Damage);
 
-		GEngine->AddOnScreenDebugMessage(-1, 1, FColor::Red, FString::Printf(TEXT("PLAYER FOUND")));
+		GEngine->AddOnScreenDebugMessage(-1, 1, FColor::Blue, FString::Printf(TEXT("PLAYER FOUND")));
 	}
 	else
 	{
 		GEngine->AddOnScreenDebugMessage(-1, 1, FColor::Red, FString::Printf(TEXT("PLAYER NOT FOUND")));
 	}
 
+}
+
+void UWeapon::Teleport()
+{
+	//Rotation of the player stays the same
+	player->SetActorRotation(player->GetActorRotation());
+	//The player teleports to wherever the Dagger is
+	player->SetActorLocation(GetOwner()->GetActorLocation());
 }
 
 

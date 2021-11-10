@@ -19,11 +19,13 @@ struct FHitResult;
 #define VR_Game_Source_VR_Game_Public_Weapon_h_13_SPARSE_DATA
 #define VR_Game_Source_VR_Game_Public_Weapon_h_13_RPC_WRAPPERS \
  \
+	DECLARE_FUNCTION(execTeleport); \
 	DECLARE_FUNCTION(execonOverlapBegin);
 
 
 #define VR_Game_Source_VR_Game_Public_Weapon_h_13_RPC_WRAPPERS_NO_PURE_DECLS \
  \
+	DECLARE_FUNCTION(execTeleport); \
 	DECLARE_FUNCTION(execonOverlapBegin);
 
 

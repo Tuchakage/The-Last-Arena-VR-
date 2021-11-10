@@ -22,6 +22,13 @@ void EmptyLinkFunctionForGeneratedCodeWeapon() {}
 	ENGINE_API UScriptStruct* Z_Construct_UScriptStruct_FHitResult();
 	ENGINE_API UClass* Z_Construct_UClass_UStaticMeshComponent_NoRegister();
 // End Cross Module References
+	DEFINE_FUNCTION(UWeapon::execTeleport)
+	{
+		P_FINISH;
+		P_NATIVE_BEGIN;
+		P_THIS->Teleport();
+		P_NATIVE_END;
+	}
 	DEFINE_FUNCTION(UWeapon::execonOverlapBegin)
 	{
 		P_GET_OBJECT(UPrimitiveComponent,Z_Param_OverlappedComponent);
@@ -40,6 +47,7 @@ void EmptyLinkFunctionForGeneratedCodeWeapon() {}
 		UClass* Class = UWeapon::StaticClass();
 		static const FNameNativePtrPair Funcs[] = {
 			{ "onOverlapBegin", &UWeapon::execonOverlapBegin },
+			{ "Teleport", &UWeapon::execTeleport },
 		};
 		FNativeFunctionRegistrar::RegisterFunctions(Class, Funcs, UE_ARRAY_COUNT(Funcs));
 	}
@@ -126,6 +134,29 @@ void EmptyLinkFunctionForGeneratedCodeWeapon() {}
 		}
 		return ReturnFunction;
 	}
+	struct Z_Construct_UFunction_UWeapon_Teleport_Statics
+	{
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
+#endif
+		static const UE4CodeGen_Private::FFunctionParams FuncParams;
+	};
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UWeapon_Teleport_Statics::Function_MetaDataParams[] = {
+		{ "Category", "Teleport" },
+		{ "ModuleRelativePath", "Public/Weapon.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UWeapon_Teleport_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UWeapon, nullptr, "Teleport", nullptr, nullptr, 0, nullptr, 0, RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04020401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UWeapon_Teleport_Statics::Function_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UFunction_UWeapon_Teleport_Statics::Function_MetaDataParams)) };
+	UFunction* Z_Construct_UFunction_UWeapon_Teleport()
+	{
+		static UFunction* ReturnFunction = nullptr;
+		if (!ReturnFunction)
+		{
+			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UFunction_UWeapon_Teleport_Statics::FuncParams);
+		}
+		return ReturnFunction;
+	}
 	UClass* Z_Construct_UClass_UWeapon_NoRegister()
 	{
 		return UWeapon::StaticClass();
@@ -159,6 +190,7 @@ void EmptyLinkFunctionForGeneratedCodeWeapon() {}
 	};
 	const FClassFunctionLinkInfo Z_Construct_UClass_UWeapon_Statics::FuncInfo[] = {
 		{ &Z_Construct_UFunction_UWeapon_onOverlapBegin, "onOverlapBegin" }, // 1319685033
+		{ &Z_Construct_UFunction_UWeapon_Teleport, "Teleport" }, // 380414840
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UWeapon_Statics::Class_MetaDataParams[] = {
@@ -222,7 +254,7 @@ void EmptyLinkFunctionForGeneratedCodeWeapon() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UWeapon, 3650007790);
+	IMPLEMENT_CLASS(UWeapon, 4250231815);
 	template<> VR_GAME_API UClass* StaticClass<UWeapon>()
 	{
 		return UWeapon::StaticClass();

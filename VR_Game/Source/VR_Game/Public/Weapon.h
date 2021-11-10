@@ -34,5 +34,7 @@ public:
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Player")
 	AActor* player;
 
+	UFUNCTION(BlueprintCallable, Category = "Teleport")
+	void Teleport();
 
 };
