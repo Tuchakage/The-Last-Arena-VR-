@@ -1,17 +1,18 @@
 ﻿  Using 'git status' to determine working set for adaptive non-unity build (D:\Users\tucha\Documents\GitHub\The-Last-Arena-VR-).
+  Creating makefile for VR_GameEditor (.uproject file is newer)
+  Parsing headers for VR_GameEditor
+    Running UnrealHeaderTool "D:\Users\tucha\Documents\GitHub\The-Last-Arena-VR-\VR_Game\VR_Game.uproject" "D:\Users\tucha\Documents\GitHub\The-Last-Arena-VR-\VR_Game\Intermediate\Build\Win64\VR_GameEditor\Development\VR_GameEditor.uhtmanifest" -LogCmds="loginit warning, logexit warning, logdatabase error" -Unattended -WarningsAsErrors -abslog="C:\Users\tucha\AppData\Local\UnrealBuildTool\Log_UHT.txt" -installed
+  Reflection code generated for VR_GameEditor in 11.0598113 seconds
   Building VR_GameEditor...
   Using Visual Studio 2019 14.29.30038 toolchain (C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30037) and Windows 10.0.16299.0 SDK (C:\Program Files (x86)\Windows Kits\10).
-  Building 4 actions with 12 processes...
-    [1/4] Weapon.cpp
-C:\Program Files\Epic Games\UE_4.26\Engine\Source\Runtime\Core\Public\Containers/UnrealString.h(1552): error C2338: Invalid argument(s) passed to FString::Printf
-    D:\Users\tucha\Documents\GitHub\The-Last-Arena-VR-\VR_Game\Source\VR_Game\Private\Weapon.cpp(49): note: see reference to function template instantiation 'FString FString::Printf<wchar_t[17],FString>(const FmtType (&),FString)' being compiled
-            with
-            [
-                FmtType=wchar_t [17]
-            ]
-C:\Program Files\Epic Games\UE_4.26\Engine\Source\Runtime\Core\Public\Containers/UnrealString.h(1554): error C4840: non-portable use of class 'FString' as an argument to a variadic function
-    C:\Program Files\Epic Games\UE_4.26\Engine\Source\Runtime\Core\Public\Containers/UnrealString.h(1554): note: 'FString::FString' is non-trivial
-    C:\Program Files\Epic Games\UE_4.26\Engine\Source\Runtime\Core\Public\Containers/UnrealString.h(190): note: see declaration of 'FString::FString'
-    C:\Program Files\Epic Games\UE_4.26\Engine\Source\Runtime\Core\Public\Containers/UnrealString.h(1554): note: the constructor and destructor will not be called; a bitwise copy of the class will be passed as the argument
-    C:\Program Files\Epic Games\UE_4.26\Engine\Source\Runtime\Core\Public\Windows/WindowsPlatformNamedPipe.h(12): note: see declaration of 'FString'
-C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v160\Microsoft.MakeFile.Targets(45,5): error MSB3073: The command ""C:\Program Files\Epic Games\UE_4.26\Engine\Build\BatchFiles\Build.bat" VR_GameEditor Win64 Development -Project="D:\Users\tucha\Documents\GitHub\The-Last-Arena-VR-\VR_Game\VR_Game.uproject" -WaitMutex -FromMsBuild" exited with code 6.
+  Building 6 actions with 12 processes...
+    [1/6] VR_Game.init.gen.cpp
+    [2/6] Weapon.gen.cpp
+    [3/6] Weapon.cpp
+    [4/6] UE4Editor-VR_Game-0026.lib
+       Creating library D:\Users\tucha\Documents\GitHub\The-Last-Arena-VR-\VR_Game\Intermediate\Build\Win64\UE4Editor\Development\VR_Game\UE4Editor-VR_Game-0026.lib and object D:\Users\tucha\Documents\GitHub\The-Last-Arena-VR-\VR_Game\Intermediate\Build\Win64\UE4Editor\Development\VR_Game\UE4Editor-VR_Game-0026.exp
+    [5/6] UE4Editor-VR_Game-0026.dll
+       Creating library D:\Users\tucha\Documents\GitHub\The-Last-Arena-VR-\VR_Game\Intermediate\Build\Win64\UE4Editor\Development\VR_Game\UE4Editor-VR_Game-0026.suppressed.lib and object D:\Users\tucha\Documents\GitHub\The-Last-Arena-VR-\VR_Game\Intermediate\Build\Win64\UE4Editor\Development\VR_Game\UE4Editor-VR_Game-0026.suppressed.exp
+    [6/6] VR_GameEditor.target
+  Total time in Parallel executor: 582.08 seconds
+  Total execution time: 595.74 seconds

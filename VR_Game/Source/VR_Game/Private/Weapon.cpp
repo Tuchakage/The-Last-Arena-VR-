@@ -37,10 +37,10 @@ void UWeapon::onOverlapBegin(UPrimitiveComponent* OverlappedComponent, AActor* O
 	//const FString command = FString::Printf(TEXT("Test"));
 	//If the player it has been collided with has been found
 
-	if (OtherActor == player)
+	if (OtherActor->ActorHasTag("Enemy"))
 	{
 		//Find the Health Component and then call the Take Damage function (Inputs the Damage variable)
-		player->FindComponentByClass<UHealthComponent>()->TakeDamage(Damage);
+		OtherActor->FindComponentByClass<UHealthComponent>()->TakeDamage(Damage);
 
 		GEngine->AddOnScreenDebugMessage(-1, 1, FColor::Blue, FString::Printf(TEXT("PLAYER FOUND")));
 	}
