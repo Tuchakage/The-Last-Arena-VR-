@@ -4,6 +4,7 @@
 
 #include "CoreMinimal.h"
 #include "Components/ActorComponent.h"
+#include "Components/BoxComponent.h"
 #include "Weapon.generated.h"
 
 
@@ -21,21 +22,25 @@ protected:
 	virtual void BeginPlay() override;
 
 public:
-	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Collision")
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Damage")
 	float Damage;
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Collision")
-	UStaticMeshComponent* CollisionMesh;
+	UBoxComponent* CollisionMesh;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Player")
+	AActor* player;
+
 
 	//TESTING PURPOSES (Overrides On Component Begin Overlap)
 	UFUNCTION()
 	void onOverlapBegin(UPrimitiveComponent* OverlappedComponent, AActor* OtherActor, UPrimitiveComponent* OtherComp, int32 OtherBodyIndex, bool bFromSweep, const FHitResult& SweepResult);
 
-	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Player")
-	AActor* player;
+
 
 	UFUNCTION(BlueprintCallable, Category = "Teleport")
 	void Teleport();
+
 
 
 

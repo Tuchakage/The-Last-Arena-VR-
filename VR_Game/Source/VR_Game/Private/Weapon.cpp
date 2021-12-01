@@ -41,7 +41,6 @@ void UWeapon::onOverlapBegin(UPrimitiveComponent* OverlappedComponent, AActor* O
 	{
 		//Find the Health Component and then call the Take Damage function (Inputs the Damage variable)
 		OtherActor->FindComponentByClass<UHealthComponent>()->TakeDamage(Damage);
-
 		GEngine->AddOnScreenDebugMessage(-1, 1, FColor::Blue, FString::Printf(TEXT("PLAYER FOUND")));
 	}
 	else

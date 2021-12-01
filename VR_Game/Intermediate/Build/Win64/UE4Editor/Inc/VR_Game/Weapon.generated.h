@@ -16,20 +16,20 @@ struct FHitResult;
 #endif
 #define VR_GAME_Weapon_generated_h
 
-#define VR_Game_Source_VR_Game_Public_Weapon_h_13_SPARSE_DATA
-#define VR_Game_Source_VR_Game_Public_Weapon_h_13_RPC_WRAPPERS \
+#define VR_Game_Source_VR_Game_Public_Weapon_h_14_SPARSE_DATA
+#define VR_Game_Source_VR_Game_Public_Weapon_h_14_RPC_WRAPPERS \
  \
 	DECLARE_FUNCTION(execTeleport); \
 	DECLARE_FUNCTION(execonOverlapBegin);
 
 
-#define VR_Game_Source_VR_Game_Public_Weapon_h_13_RPC_WRAPPERS_NO_PURE_DECLS \
+#define VR_Game_Source_VR_Game_Public_Weapon_h_14_RPC_WRAPPERS_NO_PURE_DECLS \
  \
 	DECLARE_FUNCTION(execTeleport); \
 	DECLARE_FUNCTION(execonOverlapBegin);
 
 
-#define VR_Game_Source_VR_Game_Public_Weapon_h_13_INCLASS_NO_PURE_DECLS \
+#define VR_Game_Source_VR_Game_Public_Weapon_h_14_INCLASS_NO_PURE_DECLS \
 private: \
 	static void StaticRegisterNativesUWeapon(); \
 	friend struct Z_Construct_UClass_UWeapon_Statics; \
@@ -38,7 +38,7 @@ public: \
 	DECLARE_SERIALIZER(UWeapon)
 
 
-#define VR_Game_Source_VR_Game_Public_Weapon_h_13_INCLASS \
+#define VR_Game_Source_VR_Game_Public_Weapon_h_14_INCLASS \
 private: \
 	static void StaticRegisterNativesUWeapon(); \
 	friend struct Z_Construct_UClass_UWeapon_Statics; \
@@ -47,7 +47,7 @@ public: \
 	DECLARE_SERIALIZER(UWeapon)
 
 
-#define VR_Game_Source_VR_Game_Public_Weapon_h_13_STANDARD_CONSTRUCTORS \
+#define VR_Game_Source_VR_Game_Public_Weapon_h_14_STANDARD_CONSTRUCTORS \
 	/** Standard constructor, called after all reflected properties have been initialized */ \
 	NO_API UWeapon(const FObjectInitializer& ObjectInitializer); \
 	DEFINE_DEFAULT_OBJECT_INITIALIZER_CONSTRUCTOR_CALL(UWeapon) \
@@ -60,7 +60,7 @@ private: \
 public:
 
 
-#define VR_Game_Source_VR_Game_Public_Weapon_h_13_ENHANCED_CONSTRUCTORS \
+#define VR_Game_Source_VR_Game_Public_Weapon_h_14_ENHANCED_CONSTRUCTORS \
 private: \
 	/** Private move- and copy-constructors, should never be used */ \
 	NO_API UWeapon(UWeapon&&); \
@@ -71,28 +71,28 @@ DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(UWeapon); \
 	DEFINE_DEFAULT_CONSTRUCTOR_CALL(UWeapon)
 
 
-#define VR_Game_Source_VR_Game_Public_Weapon_h_13_PRIVATE_PROPERTY_OFFSET
-#define VR_Game_Source_VR_Game_Public_Weapon_h_10_PROLOG
-#define VR_Game_Source_VR_Game_Public_Weapon_h_13_GENERATED_BODY_LEGACY \
+#define VR_Game_Source_VR_Game_Public_Weapon_h_14_PRIVATE_PROPERTY_OFFSET
+#define VR_Game_Source_VR_Game_Public_Weapon_h_11_PROLOG
+#define VR_Game_Source_VR_Game_Public_Weapon_h_14_GENERATED_BODY_LEGACY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	VR_Game_Source_VR_Game_Public_Weapon_h_13_PRIVATE_PROPERTY_OFFSET \
-	VR_Game_Source_VR_Game_Public_Weapon_h_13_SPARSE_DATA \
-	VR_Game_Source_VR_Game_Public_Weapon_h_13_RPC_WRAPPERS \
-	VR_Game_Source_VR_Game_Public_Weapon_h_13_INCLASS \
-	VR_Game_Source_VR_Game_Public_Weapon_h_13_STANDARD_CONSTRUCTORS \
+	VR_Game_Source_VR_Game_Public_Weapon_h_14_PRIVATE_PROPERTY_OFFSET \
+	VR_Game_Source_VR_Game_Public_Weapon_h_14_SPARSE_DATA \
+	VR_Game_Source_VR_Game_Public_Weapon_h_14_RPC_WRAPPERS \
+	VR_Game_Source_VR_Game_Public_Weapon_h_14_INCLASS \
+	VR_Game_Source_VR_Game_Public_Weapon_h_14_STANDARD_CONSTRUCTORS \
 public: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
 
-#define VR_Game_Source_VR_Game_Public_Weapon_h_13_GENERATED_BODY \
+#define VR_Game_Source_VR_Game_Public_Weapon_h_14_GENERATED_BODY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	VR_Game_Source_VR_Game_Public_Weapon_h_13_PRIVATE_PROPERTY_OFFSET \
-	VR_Game_Source_VR_Game_Public_Weapon_h_13_SPARSE_DATA \
-	VR_Game_Source_VR_Game_Public_Weapon_h_13_RPC_WRAPPERS_NO_PURE_DECLS \
-	VR_Game_Source_VR_Game_Public_Weapon_h_13_INCLASS_NO_PURE_DECLS \
-	VR_Game_Source_VR_Game_Public_Weapon_h_13_ENHANCED_CONSTRUCTORS \
+	VR_Game_Source_VR_Game_Public_Weapon_h_14_PRIVATE_PROPERTY_OFFSET \
+	VR_Game_Source_VR_Game_Public_Weapon_h_14_SPARSE_DATA \
+	VR_Game_Source_VR_Game_Public_Weapon_h_14_RPC_WRAPPERS_NO_PURE_DECLS \
+	VR_Game_Source_VR_Game_Public_Weapon_h_14_INCLASS_NO_PURE_DECLS \
+	VR_Game_Source_VR_Game_Public_Weapon_h_14_ENHANCED_CONSTRUCTORS \
 private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
