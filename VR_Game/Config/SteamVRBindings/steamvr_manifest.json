@@ -168,6 +168,10 @@
 			"type": "boolean"
 		},
 		{
+			"name": "/actions/main/in/MenuButtonRight",
+			"type": "boolean"
+		},
+		{
 			"name": "/actions/main/in/TeleportDirectionUp axis",
 			"type": "vector1"
 		},
@@ -445,6 +449,7 @@
 			"/actions/main/in/GrabLeft": "GrabLeft",
 			"/actions/main/in/GrabRight": "GrabRight",
 			"/actions/main/in/TeleportToWeapon": "TeleportToWeapon",
+			"/actions/main/in/MenuButtonRight": "MenuButtonRight",
 			"/actions/main/in/TeleportDirectionUp axis": "TeleportDirectionUp",
 			"/actions/main/in/TeleportDirectionRight axis": "TeleportDirectionRight",
 			"/actions/main/in/MotionControllerThumbLeft_Y axis": "MotionControllerThumbLeft_Y",
