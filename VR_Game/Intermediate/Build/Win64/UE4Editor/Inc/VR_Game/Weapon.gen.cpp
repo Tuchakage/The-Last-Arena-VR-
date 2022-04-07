@@ -180,6 +180,15 @@ void EmptyLinkFunctionForGeneratedCodeWeapon() {}
 		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_player_MetaData[];
 #endif
 		static const UE4CodeGen_Private::FObjectPropertyParams NewProp_player;
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_damageDealt_MetaData[];
+#endif
+		static void NewProp_damageDealt_SetBit(void* Obj);
+		static const UE4CodeGen_Private::FBoolPropertyParams NewProp_damageDealt;
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_attackCooldown_MetaData[];
+#endif
+		static const UE4CodeGen_Private::FFloatPropertyParams NewProp_attackCooldown;
 		static const UE4CodeGen_Private::FPropertyParamsBase* const PropPointers[];
 		static const FCppClassTypeInfoStatic StaticCppClassTypeInfo;
 		static const UE4CodeGen_Private::FClassParams ClassParams;
@@ -222,10 +231,30 @@ void EmptyLinkFunctionForGeneratedCodeWeapon() {}
 	};
 #endif
 	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_UWeapon_Statics::NewProp_player = { "player", nullptr, (EPropertyFlags)0x0010000000000005, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(UWeapon, player), Z_Construct_UClass_AActor_NoRegister, METADATA_PARAMS(Z_Construct_UClass_UWeapon_Statics::NewProp_player_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_UWeapon_Statics::NewProp_player_MetaData)) };
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UWeapon_Statics::NewProp_damageDealt_MetaData[] = {
+		{ "Category", "Weapon" },
+		{ "ModuleRelativePath", "Public/Weapon.h" },
+	};
+#endif
+	void Z_Construct_UClass_UWeapon_Statics::NewProp_damageDealt_SetBit(void* Obj)
+	{
+		((UWeapon*)Obj)->damageDealt = 1;
+	}
+	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UClass_UWeapon_Statics::NewProp_damageDealt = { "damageDealt", nullptr, (EPropertyFlags)0x0010000000000005, UE4CodeGen_Private::EPropertyGenFlags::Bool | UE4CodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, 1, sizeof(bool), sizeof(UWeapon), &Z_Construct_UClass_UWeapon_Statics::NewProp_damageDealt_SetBit, METADATA_PARAMS(Z_Construct_UClass_UWeapon_Statics::NewProp_damageDealt_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_UWeapon_Statics::NewProp_damageDealt_MetaData)) };
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UWeapon_Statics::NewProp_attackCooldown_MetaData[] = {
+		{ "Category", "Weapon" },
+		{ "ModuleRelativePath", "Public/Weapon.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UClass_UWeapon_Statics::NewProp_attackCooldown = { "attackCooldown", nullptr, (EPropertyFlags)0x0010000000000005, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(UWeapon, attackCooldown), METADATA_PARAMS(Z_Construct_UClass_UWeapon_Statics::NewProp_attackCooldown_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_UWeapon_Statics::NewProp_attackCooldown_MetaData)) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_UWeapon_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UWeapon_Statics::NewProp_Damage,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UWeapon_Statics::NewProp_CollisionMesh,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UWeapon_Statics::NewProp_player,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UWeapon_Statics::NewProp_damageDealt,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UWeapon_Statics::NewProp_attackCooldown,
 	};
 	const FCppClassTypeInfoStatic Z_Construct_UClass_UWeapon_Statics::StaticCppClassTypeInfo = {
 		TCppClassTypeTraits<UWeapon>::IsAbstract,
@@ -254,7 +283,7 @@ void EmptyLinkFunctionForGeneratedCodeWeapon() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UWeapon, 771503258);
+	IMPLEMENT_CLASS(UWeapon, 3442522537);
 	template<> VR_GAME_API UClass* StaticClass<UWeapon>()
 	{
 		return UWeapon::StaticClass();

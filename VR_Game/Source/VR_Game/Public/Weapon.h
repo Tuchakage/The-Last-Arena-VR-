@@ -31,11 +31,15 @@ public:
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Player")
 	AActor* player;
 
+	UPROPERTY(EditAnywhere, BlueprintReadWrite)
+	bool damageDealt;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite)
+	float attackCooldown;
 
 	//TESTING PURPOSES (Overrides On Component Begin Overlap)
 	UFUNCTION()
 	void onOverlapBegin(UPrimitiveComponent* OverlappedComponent, AActor* OtherActor, UPrimitiveComponent* OtherComp, int32 OtherBodyIndex, bool bFromSweep, const FHitResult& SweepResult);
-
 
 
 	UFUNCTION(BlueprintCallable, Category = "Teleport")
