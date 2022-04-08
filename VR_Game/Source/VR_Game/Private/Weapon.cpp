@@ -22,6 +22,7 @@ void UWeapon::BeginPlay()
 	Super::BeginPlay();
 
 	damageDealt = false;
+	hasBeenGrabbed = false;
 	//TESTING PURPOSES (Overrides On Component Begin Overlap)
 	CollisionMesh->OnComponentBeginOverlap.AddDynamic(this, &UWeapon::onOverlapBegin);
 
@@ -38,8 +39,8 @@ void UWeapon::onOverlapBegin(UPrimitiveComponent* OverlappedComponent, AActor* O
 	//const FString command = FString::Printf(TEXT("Test"));
 	//If the player it has been collided with has been found
 
-	//If the Weapon collides with the HitBox and the weapon hasnt dealt damage yet
-	if (OtherActor->FindComponentByClass< UBoxComponent>()->ComponentHasTag("Enemy") && !damageDealt)
+	//If the Weapon collides with the HitBox and the weapon hasnt dealt damage yet also make sure the weapon has been Grabbed
+	if (OtherActor->FindComponentByClass< UBoxComponent>()->ComponentHasTag("Enemy") && !damageDealt && hasBeenGrabbed)
 	{
 		//Find the Health Component and then call the Take Damage function (Inputs the Damage variable)
 		OtherActor->FindComponentByClass<UHealthComponent>()->TakeDamage(Damage);
