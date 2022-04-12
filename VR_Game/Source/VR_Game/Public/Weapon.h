@@ -35,9 +35,6 @@ public:
 	bool damageDealt;
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite)
-	float attackCooldown;
-
-	UPROPERTY(EditAnywhere, BlueprintReadWrite)
 	bool hasBeenGrabbed;
 
 	//TESTING PURPOSES (Overrides On Component Begin Overlap)

@@ -21,7 +21,7 @@ void EmptyLinkFunctionForGeneratedCodeVR_Game_init() {}
 				nullptr,
 				0,
 				PKG_CompiledIn | 0x00000000,
-				0xF6C9C75F,
+				0x3A73D8C0,
 				0x3E25CC61,
 				METADATA_PARAMS(nullptr, 0)
 			};
