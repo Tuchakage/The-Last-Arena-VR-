@@ -40,7 +40,7 @@ void UWeapon::onOverlapBegin(UPrimitiveComponent* OverlappedComponent, AActor* O
 	//If the player it has been collided with has been found
 
 	//If the Weapon collides with the HitBox and the weapon hasnt dealt damage yet also make sure the weapon has been Grabbed
-	if (OtherComp->ComponentHasTag("Enemy") && !damageDealt && hasBeenGrabbed)
+	if (OtherComp->ComponentHasTag("EHitbox") && !damageDealt && hasBeenGrabbed)
 	{
 		//Find the Health Component and then call the Take Damage function (Inputs the Damage variable)
 		OtherActor->FindComponentByClass<UHealthComponent>()->TakeDamage(Damage);
